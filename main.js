@@ -4,11 +4,15 @@ const menuClose = document.getElementById("menuClose");
 const menuLinks = document.querySelectorAll(".menu-link");
 
 function openMenu() {
+  if (!menuOverlay) return;
+
   menuOverlay.classList.add("is-open");
   document.body.classList.add("menu-open");
 }
 
 function closeMenu() {
+  if (!menuOverlay) return;
+
   menuOverlay.classList.remove("is-open");
   document.body.classList.remove("menu-open");
 }
