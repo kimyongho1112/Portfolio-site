@@ -314,6 +314,10 @@
   display: none;
 }
 
+.project-collection .project-visual[hidden] {
+  display: none !important;
+}
+
 .project-collection .project-index-entry + .project-index-entry {
   margin-top: 0;
 }
