@@ -330,6 +330,12 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) 24px;
   }
+
+  .project-collection .project-index-entry .project-visual,
+  .project-collection .project-index-entry.project-02 .project-visual,
+  .project-collection .project-index-entry.project-03 .project-visual {
+    display: none;
+  }
 }
 
 html,
@@ -2735,5 +2741,11 @@ body.menu-open {
   .project-collection .project-index-entry.project-03 {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 24px;
+  }
+
+  .project-collection .project-index-entry .project-visual,
+  .project-collection .project-index-entry.project-02 .project-visual,
+  .project-collection .project-index-entry.project-03 .project-visual {
+    display: none;
   }
 }
