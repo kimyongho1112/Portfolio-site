@@ -340,6 +340,7 @@
   .project-collection .project-index-entry.project-03 .project-visual {
     display: none;
   }
+
 }
 
 html,
@@ -3053,5 +3054,9 @@ body.menu-open {
   .project-collection .project-index-entry.project-02 .project-visual,
   .project-collection .project-index-entry.project-03 .project-visual {
     display: none;
+  }
+
+  .project-collection .project-index-entry h2 {
+    font-size: clamp(28px, 8vw, 46px);
   }
 }
