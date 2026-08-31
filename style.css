@@ -1922,6 +1922,12 @@ body {
   color: #777777;
 }
 
+.gyeongsan-detail-media img {
+  max-height: 980px;
+  object-fit: cover;
+  object-position: center 58%;
+}
+
 
 /* =========================
    FEATURE
