@@ -2731,9 +2731,305 @@ body.menu-open {
   }
 }
 
-/* PROJECT INDEX — keep the three projects as one compact table of contents */
+/* PROJECT INDEX — keep the projects as one compact table of contents */
 .projects-intro[hidden] {
   display: none;
+}
+
+/* =========================
+   KYH VOL.1
+========================= */
+
+.kyh-hero .detail-hero-main h1 {
+  font-size: clamp(76px, 10vw, 156px);
+}
+
+.kyh-detail-meta {
+  max-width: 860px;
+  grid-template-columns: 1fr 1.45fr 1fr;
+}
+
+.kyh-main-visual {
+  background: #e9e8e4;
+}
+
+.kyh-main-visual img {
+  max-height: none;
+  aspect-ratio: 1.42 / 1;
+  object-fit: contain;
+}
+
+.kyh-image-note {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 14px;
+  color: #111111;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+.kyh-image-note p,
+.kyh-origin-media figure,
+.kyh-origin-media figcaption,
+.kyh-research-media,
+.kyh-research-media figcaption,
+.kyh-result-media,
+.kyh-result-media figcaption {
+  margin: 0;
+}
+
+.kyh-lead-copy {
+  font-size: 22px !important;
+  font-weight: 500;
+  line-height: 1.65 !important;
+  letter-spacing: -0.025em;
+}
+
+.kyh-origin-media {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 24px;
+  align-items: end;
+  padding: 0 64px 180px;
+}
+
+.kyh-origin-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+.kyh-origin-media figcaption,
+.kyh-concept-grid figcaption,
+.kyh-curation-grid figcaption,
+.kyh-space-grid figcaption {
+  padding-top: 12px;
+  color: #777777;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+}
+
+.kyh-origin-media > p {
+  margin: 0;
+  padding-bottom: 24px;
+  font-size: clamp(48px, 6.5vw, 104px);
+  font-weight: 700;
+  line-height: 0.86;
+  letter-spacing: -0.055em;
+}
+
+.kyh-format-flow {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: 18px;
+  align-items: center;
+  margin-top: 80px;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+}
+
+.kyh-format-flow div {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.kyh-format-flow div span,
+.kyh-format-flow > span {
+  color: #777777;
+  font-size: 11px;
+}
+
+.kyh-format-flow strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kyh-concept-grid,
+.kyh-research + .detail-media-grid {
+  background: #111111;
+  color: #f5f5f2;
+}
+
+.kyh-concept-grid {
+  padding-top: 0;
+}
+
+.kyh-concept-grid img,
+.kyh-curation-grid img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.kyh-space-grid img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.kyh-space-grid figure:first-child img {
+  object-position: center 48%;
+}
+
+.kyh-space-grid figure:last-child img {
+  object-position: center 46%;
+}
+
+.kyh-research-media {
+  margin-top: 120px;
+}
+
+.kyh-research-media img,
+.kyh-result-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.kyh-research-media img {
+  object-position: center 48%;
+}
+
+.kyh-research-media figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 14px;
+  border-top: 1px solid transparent;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #aaaaaa;
+}
+
+.kyh-result-media {
+  margin-top: 120px;
+}
+
+.kyh-result-media img {
+  object-position: center 52%;
+}
+
+.kyh-result-media figcaption {
+  padding-top: 12px;
+  color: #777777;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.kyh-result-facts {
+  margin-top: 96px;
+  border-top: 1px solid #cccccc;
+}
+
+.kyh-result-facts > div {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 30px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.kyh-result-facts span {
+  color: #777777;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.kyh-result-facts strong {
+  font-size: clamp(30px, 4vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+@media (max-width: 768px) {
+  .kyh-hero .detail-hero-main h1 {
+    font-size: clamp(62px, 20vw, 94px);
+  }
+
+  .kyh-detail-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .kyh-main-visual img {
+    aspect-ratio: auto;
+  }
+
+  .kyh-image-note,
+  .kyh-research-media figcaption {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .kyh-lead-copy {
+    font-size: 19px !important;
+  }
+
+  .kyh-origin-media {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding: 0 24px 100px;
+  }
+
+  .kyh-origin-media img {
+    aspect-ratio: 4 / 5;
+  }
+
+  .kyh-origin-media > p {
+    font-size: clamp(48px, 17vw, 76px);
+  }
+
+  .kyh-format-flow {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 64px;
+  }
+
+  .kyh-format-flow div {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #333333;
+  }
+
+  .kyh-format-flow > span {
+    display: none;
+  }
+
+  .kyh-concept-grid img,
+  .kyh-curation-grid img {
+    aspect-ratio: 4 / 5;
+  }
+
+  .kyh-research-media,
+  .kyh-result-media {
+    margin-top: 72px;
+  }
+
+  .kyh-research-media img,
+  .kyh-result-media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .kyh-result-facts {
+    margin-top: 64px;
+  }
+
+  .kyh-result-facts > div {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 28px 0;
+  }
+
+  .kyh-result-facts strong {
+    font-size: clamp(28px, 9vw, 44px);
+  }
 }
 
 .project-collection .project-index-entry + .project-index-entry {
